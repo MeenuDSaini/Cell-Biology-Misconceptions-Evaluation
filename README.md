@@ -1,41 +1,48 @@
-# Cell-Biology-Misconceptions-Evaluation
+# Cell-Biology-Misconceptions-AI Model Evaluation
 ## Project Overview
-This project evaluates AI models on their responses to common misconceptions in cell biology by scoring their accuracy, clarity, and completeness— demonstrating practical skills in AI evaluation, biological fact-checking, and model quality assessment.
+This project evaluates how different AI models respond to common misconceptions in cell biology. Their answers were scored based onir Accuracy, Clarity, and Completeness to assess scientific reliability and reasoning quality. Responses were scored manually and fact-checked using biological references
 
-## Dataset
+## Dataset Information
 - **Dataset Type:** AI Biological Knowledge Evaluation  
 - **Domain:** Cell Biology & Misconceptions  
-- **Methods / Metadata:** Responses collected between 15–30 Nov 2025.  
-- **Models Tested:** ChatGPT-5, Claude (latest public), Copilot.  
-- **Scoring:** Responses were copied verbatim; Each response is manually assessed for Accuracy, Clarity, Completeness and given a
-               Final Score (0–2) based on correctness and explanation quality.
-
+- **Data Collection Period:** 15–30 Nov 2025.  
+- **Models Evaluated:** ChatGPT-5, Claude (latest public), Copilot.  
+- **Evaluation Method:** Responses copied verbatim; assessed manually and scored numerically
+  
 ### Scoring Rubric
-- **Accuracy:** Factual correctness (no scientific errors)  
-- **Clarity:** Understandability and well-phrased answers  
-- **Completeness:** Whether the response fully addresses the question  
-  - Differences in length or detail do not affect the score unless they introduce confusion or misinformation.  
-  - Model output length is not a scoring factor.  
+**Category Scoring (1–5 per response)**
 
-**Rating Scale (Accuracy / Clarity / Completeness):**  
-1 = poor, 2 = fair, 3 = good, 4 = very good, 5 = excellent  
+| Score | Meaning                                  |
+| ----- | ---------------------------------------- |
+| **1** | Poor – incorrect or unclear              |
+| **2** | Fair – partially correct or vague        |
+| **3** | Good – mostly correct                    |
+| **4** | Very Good – clear and correct            |
+| **5** | Excellent – correct, clear, and complete |
 
-**Final Score (0–2):**  
-- 2 = fully correct (accuracy 5, no major omissions)  
-- 1 = partially correct (accuracy 3–4 OR clarity/completeness issues)  
-- 0 = incorrect (accuracy ≤2 or misleading fact)  
+**Final Correctness Score (0–2)**
 
+| Final Score | Meaning                                               |
+| ----------- | ----------------------------------------------------- |
+| **2**       | Fully correct – no major issues                       |
+| **1**       | Partially correct – minor clarity/completeness issues |
+| **0**       | Incorrect or misleading                               |
+
+> - Length of response does not affect scoring unless it causes confusion or misinformation.
 ---
 
 ## Key Takeaways
 1. **ChatGPT-5:** Consistently provided short, accurate, and clear responses, but sometimes answers can be oversimplified, which may miss clarification or completeness; clarification language is recommended.  
-2. **Claude:** Consistently provided accurate and clear responses with no complexity.  
+2. **Claude:** Consistently provided accurate and clear responses — no observed misconceptions.  
 3. **Copilot:** Responses were mostly correct with extra explanation, which is excellent for learners wanting deeper knowledge, but sometimes used phrasing that could reinforce misconceptions.  
 
-**Observed AI Errors:**  
-- ChatGPT-5: Oversimplification  
-- Copilot: Misleading phrasing  
-- Claude: None  
+**Observed Error Types:**  
+
+| Model     | Common Issue        |
+| --------- | ------------------- |
+| ChatGPT-5 | Oversimplification  |
+| Copilot   | Misleading phrasing |
+| Claude    | No error            |
 
 ---
 
@@ -44,7 +51,7 @@ This project evaluates AI models on their responses to common misconceptions in 
 | AI Model   | Average Accuracy| Average Clarity| Average Completeness| Average Final Score | Observed Errors         |
 |------------|-----------------|----------------|---------------------|---------------------|-------------------------|
 | ChatGPT-5  | 4.9             | 4.8            | 4.5                 | 1.9                 | Oversimplification      |
-| Claude     | 5.0             | 5.0            | 5.0                 | 2.0                 | None                    |
+| Claude     | 5.0             | 5.0            | 5.0                 | 2.0                 | No error                |
 | Copilot    | 4.9             | 4.9            | 4.9                 | 1.9                 | Misleading phrasing     |
 
 > **Notes:**  
@@ -53,23 +60,30 @@ This project evaluates AI models on their responses to common misconceptions in 
 > - “Observed Errors” highlights recurring issues, if any; blank for models with none.
 > - Final Score is not calculated from the 1–5 category averages — it is a separate correctness rating (0–2).
  
-
 ---
 
-## Example Evaluation Entry (CSV format)
+Model Reliability Summary
+-------------------------------------------------
+- Claude — Most reliable overall, no errors
+- Copilot — Good detail, one misleading phrasing case (rare)
+- ChatGPT-5 — Accurate, short & clear, sometimes too brief for full completeness
+-------------------------------------------------
+---
+
+## Example Evaluation Entry (CSV-style table for reference)
 
 | S. No. | Misconception | Prompt | AI Model | AI Response | Accuracy | Clarity | Completeness | Score | Comment | correction (if any) | Source Used | Error Type|
 |--------|---------------|--------|----------|-------------|----------|---------|--------------|-------|---------|-------------|------|--------|
 | 1      | DNA is larger than a cell | Is DNA larger than a cell? | ChatGPT-5 | No. A cell is massively larger. DNA is a long molecule inside the cell nucleus (or nucleoid), but the cell itself is much bigger. | 5 | 5 | 4 | 2 | Correct answer; short and clear. | No correction needed. (Optional: add numeric comparison: cell ~10–100 µm vs DNA ~2 m when stretched for clarity.)| [Khan Academy: Organelles in eukaryotic cells](https://www.khanacademy.org/test-prep/mcat/cells/eukaryotic-cells/a/organelles) | No error|
 
-> The full dataset is saved in CSV UTF-8 (comma-delimited) format for easy access and reproducibility.
+> The full dataset is saved in dataset.xlsx, with the main sheet named “AI response analysis” for easy access to scoring, charts, and observations.
 
 ---
 
-| File          | Description                                      |
-| ------------- | ------------------------------------------------ |
-| `dataset.csv` | Full evaluation dataset (AI responses + scoring) |
-| `README.md`   | Project documentation (this file)                |
+| File          | Description                                                                                              |
+| ------------- | -------------------------------------------------------------------------------------------------------- |
+| `dataset.xlsx`| Full evaluation dataset (AI responses + scoring), AI model performance summary and charts & observations. Main sheet: “AI response analysis”|                                                                                        
+| `README.md`   | Documentation and project summary                                                                        |
 
 ---
 
@@ -78,14 +92,18 @@ This project evaluates AI models on their responses to common misconceptions in 
 - ✔ Identifying subtle misconceptions and misleading phrasing  
 - ✔ Structured scoring rubric for accuracy, clarity & completeness  
 - ✔ Comparative performance analysis across LLMs  
-- ✔ Clear reporting with tables & summary insights — relevant for AI evaluation roles  
+- ✔ Clear reporting with tables & summary insights — relevant for AI evaluation roles
+  
+> Ideal for showcasing expertise in **AI biological knowledge evaluation** or **science-focused AI assessment roles**.
 
 ---
 
 ## Usage
-- Open the CSV in Excel, Google Sheets, or Python for analysis.  
-- Use the README and CSV together for presentations, reporting, or AI evaluation tasks.  
-- Ideal for showcasing expertise in **AI biological knowledge evaluation** or **science-focused AI assessment roles**.
+- Open the dataset.xlsx in Excel, Google Sheets, or Python for analysis.
+  - Go to the “AI response analysis” sheet to see the main dataset, scoring, and charts.
+- Charts, formatting, and multiple sheets are preserved in the Excel workbook
+- CSV export is not provided because saving as CSV removes charts, formulas, and other sheets
+- Use the README and xlsx together for presentations, reporting, or AI evaluation tasks.  
 
 ---
 
