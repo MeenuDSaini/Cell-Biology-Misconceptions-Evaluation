@@ -8,27 +8,32 @@ This project evaluates how different AI models respond to common misconceptions 
 - **Data Collection Period:** 15–30 Nov 2025.  
 - **Models Evaluated:** ChatGPT-5, Claude (latest public), Copilot.  
 - **Evaluation Method:** Responses copied verbatim; assessed manually and scored numerically
+- **Sources Consulted:** OpenStax Biology 2e, Khan Academy, Encyclopaedia Britannica, PubMed Central (PMC3005844) (Nov–Dec 2025)
   
 ### Scoring Rubric
+- **Accuracy:**	Factual correctness (no scientific errors)	
+- **Clarity:**	Understandable and well-phrased	
+- **Completeness:**	Fully addresses the question	
+- **Note:**	*Differences in length/detail do not affect score unless they introduce confusion or misinformation*	
+
 **Category Scoring (1–5 per response)**
 
-| Score | Meaning                                  |
-| ----- | ---------------------------------------- |
-| **1** | Poor – incorrect or unclear              |
-| **2** | Fair – partially correct or vague        |
-| **3** | Good – mostly correct                    |
-| **4** | Very Good – clear and correct            |
-| **5** | Excellent – correct, clear, and complete |
+| Score | Meaning                                  | Description                                                                                                                                                   |
+| ----- | ---------------------------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1** | Poor – incorrect or unclear              | Contains factual errors, confusion, or fails to answer properly.                                                                                              |
+| **2** | Fair – partially correct or vague        | Some correct ideas, but missing key points or unclear phrasing.                                                                                               |
+| **3** | Good – correct but minimal               | Accurate and understandable, but lacks clarity/detail that would improve it.                                                                                  |
+| **4** | Very Good – correct and clear            | Scientifically accurate and well phrased. Minor extra detail could improve depth.                                                                             |
+| **5** | Excellent – Fully correct, clear & well framed | Direct answer that completely resolves the question. Can be short or detailed—both qualify if the response is precise, clear, and leaves no important gap |
 
 **Final Correctness Score (0–2)**
 
 | Final Score | Meaning                                               |
 | ----------- | ----------------------------------------------------- |
-| **2**       | Fully correct – no major issues                       |
-| **1**       | Partially correct – minor clarity/completeness issues |
-| **0**       | Incorrect or misleading                               |
+| **2**       | Fully correct & clear                                 |
+| **1**       | Correct but phrasing is confusing or partially misleading |
+| **0**       | Incorrect or reinforces misconception                 |
 
-> - Length of response does not affect scoring unless it causes confusion or misinformation.
 ---
 
 ## Key Takeaways
