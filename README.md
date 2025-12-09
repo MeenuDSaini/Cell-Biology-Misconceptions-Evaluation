@@ -60,10 +60,9 @@ This project evaluates how different AI models respond to common misconceptions 
 | Copilot    | 4.9             | 4.9            | 4.9                 | 1.9                 | Misleading phrasing     |
 
 > **Notes:**  
-> - Averages are based on the 10 evaluation questions.  
-> - Final score is calculated as `(sum of individual question scores) ÷ total questions`.  
-> - “Observed Errors” highlights recurring issues, if any; blank for models with none.
-> - Final Score is not calculated from the 1–5 category averages — it is a separate correctness rating (0–2).
+> *- Averages are based on the 10 evaluation questions.*  
+> *- Final score is calculated as `(sum of individual question scores) ÷ total questions`.*  
+> *- Final Score is not calculated from the 1–5 category averages — it is a separate correctness rating (0–2).*
  
 ---
 
