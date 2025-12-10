@@ -1,6 +1,6 @@
 # Cell-Biology-Misconceptions-AI Model Evaluation
 ## Project Overview
-This project evaluates how different AI models respond to common misconceptions in cell biology. Their answers were scored based onir Accuracy, Clarity, and Completeness to assess scientific reliability and reasoning quality. Responses were scored manually and fact-checked using biological references
+This project evaluates how different AI models respond to common misconceptions in cell biology. Their answers were scored based on their Accuracy, Clarity, and Completeness to assess scientific reliability and reasoning quality. Responses were scored manually and fact-checked using biological references
 
 ## Dataset Information
 - **Dataset Type:** AI Biological Knowledge Evaluation  
@@ -8,9 +8,10 @@ This project evaluates how different AI models respond to common misconceptions 
 - **Data Collection Period:** 15–30 Nov 2025.  
 - **Models Evaluated:** ChatGPT-5, Claude (latest public), Copilot.  
 - **Evaluation Method:** Responses copied verbatim; assessed manually and scored numerically
-- **Sources Consulted:** OpenStax Biology 2e, Khan Academy, Encyclopaedia Britannica, PubMed Central (PMC3005844) (Nov–Dec 2025)
+- **Sources Consulted:** OpenStax Biology 2e, Khan Academy, Encyclopaedia Britannica, PubMed Central (PMC3005844)
   
 ### Scoring Rubric
+**Evaluation Criteria**
 - **Accuracy:**	Factual correctness (no scientific errors)	
 - **Clarity:**	Understandable and well-phrased	
 - **Completeness:**	Fully addresses the question	
@@ -31,8 +32,17 @@ This project evaluates how different AI models respond to common misconceptions 
 | Final Score | Meaning                                               |
 | ----------- | ----------------------------------------------------- |
 | **2**       | Fully correct & clear                                 |
-| **1**       | Correct but phrasing is confusing or partially misleading |
+| **1**       | Correct but phrasing is unclear or confusing or partially misleading |
 | **0**       | Incorrect or reinforces misconception                 |
+
+**Error Type Definitions**
+
+| Error Type              | Meaning                                                 |
+| ----------------------- | ------------------------------------------------------- |
+| **No error**            | Correct, clear and complete response                    |
+| **Oversimplification**  | Correct idea but lacking key detail or nuance           |
+| **Misleading phrasing** | Wording could unintentionally support the misconception |
+
 
 ---
 
@@ -40,14 +50,6 @@ This project evaluates how different AI models respond to common misconceptions 
 1. **ChatGPT-5:** Consistently provided short, accurate, and clear responses, but sometimes answers can be oversimplified, which may miss clarification or completeness; clarification language is recommended.  
 2. **Claude:** Consistently provided accurate and clear responses — no observed misconceptions.  
 3. **Copilot:** Responses were mostly correct with extra explanation, which is excellent for learners wanting deeper knowledge, but sometimes used phrasing that could reinforce misconceptions.  
-
-**Observed Error Types:**  
-
-| Model     | Common Issue        |
-| --------- | ------------------- |
-| ChatGPT-5 | Oversimplification  |
-| Copilot   | Misleading phrasing |
-| Claude    | No error            |
 
 ---
 
@@ -86,8 +88,8 @@ Model Reliability Summary
 
 | File          | Description                                                                                              |
 | ------------- | -------------------------------------------------------------------------------------------------------- |
-| `dataset.xlsx`| Full evaluation dataset (AI responses + scoring), AI model performance summary and charts & observations. Main sheet: “AI response analysis”|                                                                                        
-| `README.md`   | Documentation and project summary                                                                        |
+| `dataset.xlsx`| Full evaluation dataset with scoring, charts & observation sheets. Main sheet: “AI response analysis”|                                                                                        
+| `README.md`   | Documentation and project summary (this file)                                                                        |
 
 ---
 
