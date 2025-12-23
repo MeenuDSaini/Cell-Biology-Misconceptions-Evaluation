@@ -80,7 +80,7 @@ Model Reliability Summary
 
 | S. No. | Misconception | Prompt | AI Model | AI Response | Accuracy | Clarity | Completeness | Score | Comment | correction (if any) | Source Used | Error Type|
 |--------|---------------|--------|----------|-------------|----------|---------|--------------|-------|---------|-------------|------|--------|
-| 1      | DNA is larger than a cell | Is DNA larger than a cell? | ChatGPT-5 | No. A cell is massively larger. DNA is a long molecule inside the cell nucleus (or nucleoid), but the cell itself is much bigger. | 5 | 5 | 4 | 2 | Correct answer; short and clear. | No correction needed. (Optional: add numeric comparison: cell ~10–100 µm vs DNA ~2 m when stretched for clarity.)| [Khan Academy: Organelles in eukaryotic cells](https://www.khanacademy.org/test-prep/mcat/cells/eukaryotic-cells/a/organelles) | No error|
+| 1      | DNA is larger than a cell | Is DNA larger than a cell? | ChatGPT-5 | No. A cell is massively larger. DNA is a long molecule inside the cell nucleus (or nucleoid), but the cell itself is much bigger. | 5 | 5 | 4 | 2 | Correct answer; short and  clear. (Model could add the comparison of size of a cell and its DNA to make it more clear and precise.)| No correction needed. (Optional: add numeric comparison:  the comparison of size of a cell and its DNA when stretched for clarity.)| [Khan Academy: Organelles in eukaryotic cells](https://www.khanacademy.org/test-prep/mcat/cells/eukaryotic-cells/a/organelles) | No error|
 
 > The full dataset is saved in dataset.xlsx, with the main sheet named “AI response analysis” for easy access to scoring, charts, and observations.
 
